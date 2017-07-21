@@ -15,7 +15,7 @@ public class Test extends AbstractAlgorithm {
     }
 
     @Override
-    public void RunAlgorithm(String[] input) {
+    public void runAlgorithm(String[] input) {
         System.out.println("To jest algorytm testowy!");
     }
 }

@@ -9,6 +9,6 @@ public abstract class AbstractAlgorithm {
     }
 
     public abstract String getName();
-    public abstract void RunAlgorithm(String[] input);
+    public abstract void runAlgorithm(String[] input);
 
 }

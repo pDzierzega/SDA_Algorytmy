@@ -13,8 +13,9 @@ public class Main  {
         }
 
         AlgorithmFactory factory=new AlgorithmFactory();
-        AbstractAlgorithm algorithm=
-                factory.getAlgorithm(algorithmName);
+        AbstractAlgorithm algorithm=factory.getAlgorithm(algorithmName);
+        algorithm.runAlgorithm(args);
+
 
     }
 }
