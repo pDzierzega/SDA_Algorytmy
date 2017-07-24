@@ -34,6 +34,5 @@ public class Bankomat extends AbstractAlgorithm {
             System.out.println(n+" x "+i+" gr ");
         }
         System.out.println();
-        //System.out.println(grToPayOut +" " +zlToPayOut);// kontrola
     }
 }
