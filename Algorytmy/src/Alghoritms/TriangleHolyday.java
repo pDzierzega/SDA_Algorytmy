@@ -25,6 +25,6 @@ public class TriangleHolyday extends AbstractAlgorithm {
         int numbersOfChild= Integer.parseInt(input[index]);
         this.k[i]=Integer.parseInt(input[index=1]);
 
-        for ()
+        for ( )
     }
 }
