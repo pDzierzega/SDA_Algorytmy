@@ -11,7 +11,7 @@ public class LeapYear extends AbstractAlgorithm {
 
     @Override
     public void runAlgorithm(String[] input) {
-        for (int i=0; i<Integer.parseInt(input[1]);i++){
+        for (int i=0; i<input.length;i++){
             System.out.println(isLeapyear(Integer.parseInt(input[i+2])));
         }
     }
