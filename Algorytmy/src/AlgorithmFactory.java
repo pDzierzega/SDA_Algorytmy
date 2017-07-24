@@ -15,6 +15,8 @@ public class AlgorithmFactory {
                 return new SumAll();
             case "sumall2":
                 return new SumAll_2();
+            case "bankomat":
+                return new Bankomat();
             default:
                 throw new Exception("Nie ma takiego algorytmu");
         }
