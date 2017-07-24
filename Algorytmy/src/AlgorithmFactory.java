@@ -17,6 +17,8 @@ public class AlgorithmFactory {
                 return new SumAll_2();
             case "bankomat":
                 return new Bankomat();
+            case "leapyear":
+                return new LeapYear();
             default:
                 throw new Exception("Nie ma takiego algorytmu");
         }
