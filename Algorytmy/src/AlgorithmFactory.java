@@ -19,6 +19,12 @@ public class AlgorithmFactory {
                 return new Bankomat();
             case "leapyear":
                 return new LeapYear();
+            case "strong":
+                return new Strong();
+            case "triangleholiday":
+                return new TriangleHolyday();
+            case "sumlikestrong":
+                return new SumLikeStrong();
             default:
                 throw new Exception("Nie ma takiego algorytmu");
         }
