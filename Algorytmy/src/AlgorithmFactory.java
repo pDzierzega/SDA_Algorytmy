@@ -25,6 +25,8 @@ public class AlgorithmFactory {
                 return new TriangleHolyday();
             case "sumlikestrong":
                 return new SumLikeStrong();
+            case "fibonaccisequence":
+                return new FibonacciSequence();
             default:
                 throw new Exception("Nie ma takiego algorytmu");
         }

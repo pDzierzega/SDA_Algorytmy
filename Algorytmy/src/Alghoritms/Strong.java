@@ -11,8 +11,10 @@ public class Strong extends AbstractAlgorithm {
 
     @Override
     public void runAlgorithm(String[] input) {
-        int n=Integer.parseInt(input[1]);
-        System.out.println(n + "!= "+ strong(n));
+        for (int i = 1; i <input.length ; i++) {
+            int n = Integer.parseInt(input[i]);
+            System.out.println(n + "!= " + strong(n));
+        }
     }
 
     private int strong (int n){
