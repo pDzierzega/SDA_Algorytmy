@@ -1,4 +1,5 @@
 import Alghoritms.AbstractAlgorithm;
+import Alghoritms.PalindronWLiczbach;
 
 public class Main  {
 

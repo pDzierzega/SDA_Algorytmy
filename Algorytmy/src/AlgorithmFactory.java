@@ -29,6 +29,8 @@ public class AlgorithmFactory {
                 return new FibonacciSequence();
             case "ciphercezar":
                 return new CipherCezar();
+            case "palindromwliczbach":
+                return new PalindronWLiczbach();
             default:
                 throw new Exception("Nie ma takiego algorytmu");
         }
