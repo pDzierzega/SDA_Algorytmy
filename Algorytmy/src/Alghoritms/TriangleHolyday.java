@@ -69,7 +69,7 @@ private double calculateTest(int currentNumOfTest){    //i- currentNumOfTest
 
 private double calculateArea (int[] abc){
         double p=(abc[0]+abc[1]+abc[2])/2;
-        return Math.pow((p*(p-abc[0])*(p-abc[1])*p-abc[2]),0.5); // Heron pattern
+        return Math.pow((p*(p-abc[0])*(p-abc[1])*p-abc[2]),0.5); // Heron pattern. Zwraca NaN gdy z podanych boków nie da sie stworzyc trojkata
 }
 
 }

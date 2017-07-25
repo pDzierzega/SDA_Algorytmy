@@ -27,6 +27,8 @@ public class AlgorithmFactory {
                 return new SumLikeStrong();
             case "fibonaccisequence":
                 return new FibonacciSequence();
+            case "ciphercezar":
+                return new CipherCezar();
             default:
                 throw new Exception("Nie ma takiego algorytmu");
         }
