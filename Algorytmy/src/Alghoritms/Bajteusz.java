@@ -51,7 +51,7 @@ public class Bajteusz extends AbstractAlgorithm {
         int counter=n[i].length-1;
         int min;
         int max;
-        
+
         for (int j = 0 ; j<=counter ; j++) {
             min=n[i][counter];
             max=n[i][j];

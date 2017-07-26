@@ -39,6 +39,8 @@ public class AlgorithmFactory {
                 return new SortowanieBabelkowe();
             case "bajteusz":
                 return new Bajteusz();
+            case "zil":
+                return new ZliczaczLiter();
             default:
                 throw new Exception("Nie ma takiego algorytmu");
         }
