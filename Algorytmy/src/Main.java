@@ -13,13 +13,12 @@ public class Main  {
 //            System.out.println(args[i]);
 //        }
 
+
         AlgorithmFactory factory=new AlgorithmFactory();
         AbstractAlgorithm algorithm=factory.getAlgorithm(algorithmName);
 
         System.out.println("Wykonujemy algorytm "+ algorithm.getName());
         algorithm.runAlgorithm(args);
-
-
 
     }
 }

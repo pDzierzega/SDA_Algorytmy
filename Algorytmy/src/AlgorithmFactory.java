@@ -31,6 +31,8 @@ public class AlgorithmFactory {
                 return new CipherCezar();
             case "palindromwliczbach":
                 return new PalindronWLiczbach();
+            case "flamaster":
+                return new Flamaster();
             default:
                 throw new Exception("Nie ma takiego algorytmu");
         }
