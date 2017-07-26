@@ -1,7 +1,5 @@
 package Alghoritms;
 
-import java.util.ArrayList;
-
 /**
  * Created by RENT on 2017-07-24.
  */
@@ -18,7 +16,7 @@ public class TriangleHolyday extends AbstractAlgorithm {
 
     @Override
     public void runAlgorithm(String[] input) {
-        createAlgoritm(input);
+        createAlgorithm(input);
 
        System.out.println("wykonano "+n.length+" testów:");
         for (int i = 0; i <n.length ; i++) {
@@ -27,7 +25,7 @@ public class TriangleHolyday extends AbstractAlgorithm {
 
     }
 
-    public void createAlgoritm (String[] input) {
+    public void createAlgorithm(String[] input) {
         int numOfTest=Integer.parseInt(input[1]);
 
         abc=new int[numOfTest][][];

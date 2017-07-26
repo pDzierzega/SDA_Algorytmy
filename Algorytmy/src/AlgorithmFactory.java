@@ -33,6 +33,8 @@ public class AlgorithmFactory {
                 return new PalindronWLiczbach();
             case "flamaster":
                 return new Flamaster();
+            case "guzzler":
+                return new Guzzler();
             default:
                 throw new Exception("Nie ma takiego algorytmu");
         }
