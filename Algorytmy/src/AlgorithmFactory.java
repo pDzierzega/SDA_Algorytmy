@@ -35,6 +35,10 @@ public class AlgorithmFactory {
                 return new Flamaster();
             case "guzzler":
                 return new Guzzler();
+            case "sortowaniebabelkowe":
+                return new SortowanieBabelkowe();
+            case "bajteusz":
+                return new Bajteusz();
             default:
                 throw new Exception("Nie ma takiego algorytmu");
         }
