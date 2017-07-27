@@ -41,6 +41,8 @@ public class AlgorithmFactory {
                 return new Bajteusz();
             case "zil":
                 return new ZliczaczLiter();
+            case "sortowanieprzezzliczanie":
+                return new SortowaniePrzezZliczanie();
             default:
                 throw new Exception("Nie ma takiego algorytmu");
         }
