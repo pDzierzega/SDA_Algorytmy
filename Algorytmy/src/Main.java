@@ -19,7 +19,10 @@ public class Main  {
         AbstractAlgorithm algorithm=factory.getAlgorithm(algorithmName);
 
         System.out.println("Wykonujemy algorytm "+ algorithm.getName());
+
         MesureTheTime.mesure(algorithm,args);
+
+
 
     }
 }

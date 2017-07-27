@@ -8,8 +8,8 @@ import java.time.LocalTime;
  */
 public class MesureTheTime  {
 
-    @SuppressWarnings("uncheked")
-    public static <T extends AbstractAlgorithm> void mesure (T algoritm,String[] args) {
+        @SuppressWarnings("uncheked")
+    public static void mesure (AbstractAlgorithm algoritm, String[] args) {
 
 
             LocalTime methodStart = LocalTime.now();

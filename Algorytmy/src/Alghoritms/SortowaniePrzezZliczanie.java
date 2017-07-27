@@ -17,12 +17,6 @@ public class SortowaniePrzezZliczanie extends AbstractAlgorithm {
 
     @Override
     public void runAlgorithm(String[] input) {
-    version_01(input);
-    }
-
-    private void version_01(String[] input) {
-        int[] out;
-        int[] tab;
 
         tab = new int[Integer.parseInt(input[1]) + 1];
         out = new int[input.length - 2];

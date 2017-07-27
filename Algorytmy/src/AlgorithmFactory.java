@@ -5,6 +5,8 @@ import Alghoritms.*;
  */
 public class AlgorithmFactory {
 
+
+
     public  AbstractAlgorithm getAlgorithm(String name) throws Exception{
         switch (name.toLowerCase()){
             case "test":
