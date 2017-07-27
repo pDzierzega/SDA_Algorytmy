@@ -1,4 +1,5 @@
 import Alghoritms.AbstractAlgorithm;
+import Alghoritms.MesureTheTime;
 import Alghoritms.PalindronWLiczbach;
 
 public class Main  {
@@ -18,7 +19,7 @@ public class Main  {
         AbstractAlgorithm algorithm=factory.getAlgorithm(algorithmName);
 
         System.out.println("Wykonujemy algorytm "+ algorithm.getName());
-        algorithm.runAlgorithm(args);
+        MesureTheTime.mesure(algorithm,args);
 
     }
 }

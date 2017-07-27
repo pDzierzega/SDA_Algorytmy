@@ -7,8 +7,8 @@ import java.util.TreeMap;
  */
 public class SortowaniePrzezZliczanie extends AbstractAlgorithm {
     private int[] tab;
-    //private TreeMap<Integer, Integer> temp = new TreeMap<>();
-    private int [] out;
+    private TreeMap<Integer, Integer> temp = new TreeMap<>();
+    private int[] out;
 
     @Override
     public String getName() {
@@ -17,26 +17,33 @@ public class SortowaniePrzezZliczanie extends AbstractAlgorithm {
 
     @Override
     public void runAlgorithm(String[] input) {
+    version_01(input);
+    }
 
-        tab = new int[Integer.parseInt(input[1])+1];
-        out = new int[input.length-2];
+    private void version_01(String[] input) {
+        int[] out;
+        int[] tab;
+
+        tab = new int[Integer.parseInt(input[1]) + 1];
+        out = new int[input.length - 2];
 
         for (int i = 0; i < input.length - 2; i++) {
             tab[Integer.parseInt(input[i + 2])]++;
         }
-        int index=0;
+        int index = 0;
 
-        for (int i=0 ; i<tab.length; i++) {
-            for (int j = 0; j <tab[i] ; j++) {
-                out[index]=i;
+        for (int i = 0; i < tab.length; i++) {
+            for (int j = 0; j < tab[i]; j++) {
+                out[index] = i;
                 index++;
             }
         }
 
         System.out.println("Posortowane liczby to:");
-        for (int i :out) {
-            System.out.print(i+" ,");
+        for (int i : out) {
+            System.out.print(i + " ,");
         }
 
     }
 }
+

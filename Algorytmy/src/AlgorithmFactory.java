@@ -43,6 +43,8 @@ public class AlgorithmFactory {
                 return new ZliczaczLiter();
             case "sortowanieprzezzliczanie":
                 return new SortowaniePrzezZliczanie();
+            case "statki":
+                return new Statki();
             default:
                 throw new Exception("Nie ma takiego algorytmu");
         }
