@@ -26,7 +26,7 @@ public class ZliczaczLiter extends AbstractAlgorithm {
             countChar(character);
         }
         sortedAndPrint();
-        
+
     }
 
     private void sortedAndPrint() {
