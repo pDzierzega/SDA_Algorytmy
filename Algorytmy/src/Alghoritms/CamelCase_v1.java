@@ -3,7 +3,7 @@ package Alghoritms;
 /**
  * Created by RENT on 2017-07-21.
  */
-public class BiednyCamelCase extends AbstractAlgorithm {
+public class CamelCase_v1 extends AbstractAlgorithm {
     @Override
     public String getName() {
         return "Biedny Camel Case";

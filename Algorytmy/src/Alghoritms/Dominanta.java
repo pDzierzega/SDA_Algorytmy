@@ -31,7 +31,6 @@ public class Dominanta extends AbstractAlgorithm {
         }
         max=max-min;
 
-
         L=new int[max+1];
         W=new int[max+1];
 

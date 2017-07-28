@@ -6,72 +6,88 @@ import java.util.ArrayList;
  * Created by RENT on 2017-07-21.
  */
 public class AlgorithmFactory {
-    public ArrayList <AbstractAlgorithm> getListAlgorith (String name) throws Exception{
-        ArrayList <AbstractAlgorithm> listOfAlgorithm=new ArrayList<>();
-        listOfAlgorithm.add(getAlgorithm(name));
-        switch (name.toLowerCase()){
-            case "sortowanieprzezzliczanie":
-                listOfAlgorithm.add(new SortowaniePrzezZliczanie_v2());
-                break;
-        }
-        return listOfAlgorithm;
-    }
 
-
-
-    public  AbstractAlgorithm getAlgorithm(String name) throws Exception{
+    public  ArrayList <AbstractAlgorithm> getAlgorithm(String name) throws Exception{
+        ArrayList<AbstractAlgorithm> toReturn = new ArrayList<>();
         switch (name.toLowerCase()){
             case "test":
-                return new Test();
-            case "biednycamelcase":
-                return new BiednyCamelCase();
+                toReturn.add( new Test());
+                break;
+            case "camelcase":
+                toReturn.add( new CamelCase_v1());
+                toReturn.add( new CamelCase_v2());
+                break;
             case "sumall":
-                return new SumAll();
+                toReturn.add( new SumAll());
+                break;
             case "sumall2":
-                return new SumAll_2();
+                toReturn.add( new SumAll_2());
+                break;
             case "bankomat":
-                return new Bankomat();
+                toReturn.add( new Bankomat());
+                break;
             case "leapyear":
-                return new LeapYear();
+                toReturn.add( new LeapYear());
+                break;
             case "strong":
-                return new Strong();
+                toReturn.add( new Strong());
+                break;
             case "triangleholiday":
-                return new TriangleHolyday();
+                toReturn.add( new TriangleHolyday());
+                break;
             case "sumlikestrong":
-                return new SumLikeStrong();
+                toReturn.add( new SumLikeStrong());
+                break;
             case "fibonaccisequence":
-                return new FibonacciSequence();
+                toReturn.add( new FibonacciSequence());
+                break;
             case "ciphercezar":
-                return new CipherCezar();
+                toReturn.add( new CipherCezar());
+                break;
             case "palindromwliczbach":
-                return new PalindronWLiczbach();
+                toReturn.add( new PalindronWLiczbach());
+                break;
             case "flamaster":
-                return new Flamaster();
+                toReturn.add( new Flamaster());
+                break;
             case "guzzler":
-                return new Guzzler();
+                toReturn.add( new Guzzler());
+                break;
             case "sortowaniebabelkowe":
-                return new SortowanieBabelkowe();
+                toReturn.add( new SortowanieBabelkowe());
+                break;
             case "bajteusz":
-                return new Bajteusz();
+                toReturn.add( new Bajteusz());
+                break;
             case "zil":
-                return new ZliczaczLiter();
+                toReturn.add( new ZliczaczLiter());
+                break;
             case "sortowanieprzezzliczanie":
-                return new SortowaniePrzezZliczanie_v1();
+                toReturn.add( new SortowaniePrzezZliczanie_v1());
+                toReturn.add( new SortowaniePrzezZliczanie_v2());
+                break;
             case "statki":
-                return new Statki();
+                toReturn.add( new Statki());
+                break;
             case "nwd":
-                return new NWD();
+                toReturn.add( new NWD());
+                break;
             case "warcaby":
-                return new GeneratorPlanszyWarcaby();
+                toReturn.add( new GeneratorPlanszyWarcaby());
+                break;
             case "dominanta":
-                return new Dominanta();
+                toReturn.add( new Dominanta());
+                break;
             case "punkty":
-                return new PunktyZSprawdzianu();
+                toReturn.add( new PunktyZSprawdzianu());
+                break;
             case "ktorydzien":
-                return new KtoryDzienRoku();
+                toReturn.add( new KtoryDzienRoku());
+                break;
             default:
                 throw new Exception("Nie ma takiego algorytmu");
         }
+        return toReturn;
     }
 
 }
