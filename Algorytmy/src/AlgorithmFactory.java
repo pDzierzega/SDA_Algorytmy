@@ -1,9 +1,21 @@
 import Alghoritms.*;
 
+import java.util.ArrayList;
+
 /**
  * Created by RENT on 2017-07-21.
  */
 public class AlgorithmFactory {
+    public ArrayList <AbstractAlgorithm> getListAlgorith (String name) throws Exception{
+        ArrayList <AbstractAlgorithm> listOfAlgorithm=new ArrayList<>();
+        listOfAlgorithm.add(getAlgorithm(name));
+        switch (name.toLowerCase()){
+            case "sortowanieprzezzliczanie":
+                listOfAlgorithm.add(new SortowaniePrzezZliczanie_v2());
+                break;
+        }
+        return listOfAlgorithm;
+    }
 
 
 
@@ -44,7 +56,7 @@ public class AlgorithmFactory {
             case "zil":
                 return new ZliczaczLiter();
             case "sortowanieprzezzliczanie":
-                return new SortowaniePrzezZliczanie();
+                return new SortowaniePrzezZliczanie_v1();
             case "statki":
                 return new Statki();
             default:

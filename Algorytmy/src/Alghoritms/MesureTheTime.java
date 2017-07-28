@@ -19,7 +19,6 @@ public class MesureTheTime  {
             Duration methoddDuration = Duration.between(methodStart, methodEnd);
 
             System.out.println();
-            System.out.println();
-            System.out.println("Ten algorytm zajal :" + methoddDuration + "s");
+            System.out.println("Wykonanie algorytmu "+algoritm.getName()+" zajęlo :" + methoddDuration + "s");
         }
     }

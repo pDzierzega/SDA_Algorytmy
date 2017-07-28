@@ -5,14 +5,13 @@ import java.util.TreeMap;
 /**
  * Created by RENT on 2017-07-27.
  */
-public class SortowaniePrzezZliczanie extends AbstractAlgorithm {
+public class SortowaniePrzezZliczanie_v1 extends AbstractAlgorithm {
     private int[] tab;
-    private TreeMap<Integer, Integer> temp = new TreeMap<>();
     private int[] out;
 
     @Override
     public String getName() {
-        return "Sortowanie Przez Zliczanie";
+        return "Sortowanie Przez Zliczanie_v1";
     }
 
     @Override
