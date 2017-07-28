@@ -59,6 +59,8 @@ public class AlgorithmFactory {
                 return new SortowaniePrzezZliczanie_v1();
             case "statki":
                 return new Statki();
+            case "nwd":
+                return new NWD();
             default:
                 throw new Exception("Nie ma takiego algorytmu");
         }
