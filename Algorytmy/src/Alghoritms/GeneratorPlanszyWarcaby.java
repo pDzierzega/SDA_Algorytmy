@@ -4,8 +4,8 @@ package Alghoritms;
  * Created by RENT on 2017-07-28.
  */
 public class GeneratorPlanszyWarcaby extends  AbstractAlgorithm {
-    char[][]tab;
-    char[] color={'C','B'};
+    private char[][]tab;
+    private char[] color={'C','B'};
 
     @Override
     public String getName() {

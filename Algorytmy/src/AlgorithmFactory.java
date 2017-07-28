@@ -63,6 +63,8 @@ public class AlgorithmFactory {
                 return new NWD();
             case "warcaby":
                 return new GeneratorPlanszyWarcaby();
+            case "dominanta":
+                return new Dominanta();
             default:
                 throw new Exception("Nie ma takiego algorytmu");
         }
