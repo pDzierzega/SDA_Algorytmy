@@ -20,12 +20,17 @@ public class Dominanta extends AbstractAlgorithm {
 
         T=new int[n];
         int max=0;
-        //int min=0; //gdyby były podane liczby ujemne
+        int min=0; //gdyby były podane liczby ujemne
         for (int i = 0; i <n ; i++) {
             T[i]=Integer.parseInt(input[i+1]);
             if (T[i]>max) max=T[i];
-
+            if (T[i]<min) min=T[i];
         }
+        for (int i = 0; i <n ; i++){
+            T[i]=T[i]-min;
+        }
+        max=max-min;
+
 
         L=new int[max+1];
         W=new int[max+1];
@@ -43,7 +48,7 @@ public class Dominanta extends AbstractAlgorithm {
         for (int i = 0; i <max ; i++) {
             if (W[i]>W[n]) n=L[i];
         }
-
+        n=n+min;
         System.out.println("dominanta dla podanego zbioru liczb to: " + n);
     }
 }
