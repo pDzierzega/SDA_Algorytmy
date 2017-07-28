@@ -65,6 +65,8 @@ public class AlgorithmFactory {
                 return new GeneratorPlanszyWarcaby();
             case "dominanta":
                 return new Dominanta();
+            case "punkty":
+                return new PunktyZSprawdzianu();
             default:
                 throw new Exception("Nie ma takiego algorytmu");
         }

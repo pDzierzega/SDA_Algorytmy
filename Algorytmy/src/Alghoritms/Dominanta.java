@@ -20,9 +20,11 @@ public class Dominanta extends AbstractAlgorithm {
 
         T=new int[n];
         int max=0;
+        //int min=0; //gdyby były podane liczby ujemne
         for (int i = 0; i <n ; i++) {
             T[i]=Integer.parseInt(input[i+1]);
             if (T[i]>max) max=T[i];
+
         }
 
         L=new int[max+1];
