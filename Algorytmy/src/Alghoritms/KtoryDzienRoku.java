@@ -35,15 +35,14 @@ public class KtoryDzienRoku extends AbstractAlgorithm {
     }
 
     private void runSimpleTest(int day,int month, int year) throws DateTimeException {
-            LocalDate data = LocalDate.of(year, month, day);
-            LocalDateTime dataTime= LocalDateTime.of(data,LocalTime.NOON);
+        LocalDate date = LocalDate.of(year-1,12,31);
+        LocalDateTime dateTime2=LocalDateTime.of(date,LocalTime.NOON);
 
-            LocalDate date = LocalDate.of(year-1,12,31);
-            LocalDateTime dateTime2=LocalDateTime.of(date,LocalTime.NOON);
+        LocalDate data = LocalDate.of(year, month, day);
+        LocalDateTime dataTime= LocalDateTime.of(data,LocalTime.NOON);
 
-            Duration days = Duration.between(dataTime, dateTime2);
-
-            System.out.println(day+"-"+month+"-"+year+" => "+days.toDays());
+        Duration days = Duration.between(dataTime, dateTime2);
+        System.out.println(data+" => "+days.toDays());
     }
 }
 
