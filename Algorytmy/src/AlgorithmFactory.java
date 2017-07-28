@@ -67,6 +67,8 @@ public class AlgorithmFactory {
                 return new Dominanta();
             case "punkty":
                 return new PunktyZSprawdzianu();
+            case "ktorydzien":
+                return new KtoryDzienRoku();
             default:
                 throw new Exception("Nie ma takiego algorytmu");
         }
