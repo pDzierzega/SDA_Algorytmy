@@ -19,7 +19,7 @@ public class GeneratorPlanszyWarcaby extends  AbstractAlgorithm {
 
         if (input[3].charAt(0)==color[1] ) {
             color[1]=color[0];
-            color[0]=input[3].charAt(1);
+            color[0]=input[3].charAt(0);
         }
 
 
