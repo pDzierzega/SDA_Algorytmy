@@ -61,6 +61,8 @@ public class AlgorithmFactory {
                 return new Statki();
             case "nwd":
                 return new NWD();
+            case "warcaby":
+                return new GeneratorPlanszyWarcaby();
             default:
                 throw new Exception("Nie ma takiego algorytmu");
         }

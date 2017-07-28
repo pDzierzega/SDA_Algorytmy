@@ -14,9 +14,7 @@ public class NWD extends AbstractAlgorithm {
         int n=Integer.parseInt(input[1]);
         int k=Integer.parseInt(input[2]);
 
-        int nwd=NWD(k,n);
-
-        System.out.println("Najwiekszy wspolny dzielnik dla liczb: "+n+" "+ k + " to ->" + nwd);
+        System.out.println("Najwiekszy wspolny dzielnik dla liczb: "+n+" "+ k + " to ->" + NWD(k,n));
 
     }
 
