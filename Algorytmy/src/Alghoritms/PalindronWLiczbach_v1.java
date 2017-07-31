@@ -1,6 +1,6 @@
 package Alghoritms;
 
-public class PalindronWLiczbach extends AbstractAlgorithm{
+public class PalindronWLiczbach_v1 extends AbstractAlgorithm{
     @Override
     public String getName() {
         return "Palindrom w liczbach";
@@ -21,7 +21,7 @@ public class PalindronWLiczbach extends AbstractAlgorithm{
                 numOfSums++;
             }
             System.out.println( "Dla liczby " + input[i] +
-                                "pierwszy otrzymany palindrom to "+reverse+
+                                " pierwszy otrzymany palindrom to "+reverse+
                                 ". Wykonano  " + numOfSums + " dodawań." );
         }
     }

@@ -48,7 +48,8 @@ public class Dominanta extends AbstractAlgorithm {
             if (W[i]>W[n]) n=L[i];
         }
         n=n+min;
-        System.out.println("dominanta dla podanego zbioru liczb to: " + n);
+        System.out.println("Dominanta dla podanego zbioru liczb to: " + n);
+//        System.out.println("Dominanta wystapiła "+W[n] ); // sprawdzic czy działa
     }
 }
 

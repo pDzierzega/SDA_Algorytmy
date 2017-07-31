@@ -1,13 +1,11 @@
 import Alghoritms.AbstractAlgorithm;
 import Alghoritms.MesureTheTime;
-import Alghoritms.PalindronWLiczbach;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Main {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args)  {
         String algorithmName = args[0];
 
         try {
@@ -19,7 +17,7 @@ public class Main {
                 MesureTheTime.mesure(algorithm, args);
                 System.out.println();
             }
-        } catch (Exception e) {
+        } catch (AlgorithmFactory.AlgorithException e) {
             System.out.println("Nie ma takiego algorytmu");
         }
     }
