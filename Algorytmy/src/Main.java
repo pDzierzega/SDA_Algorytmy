@@ -21,4 +21,6 @@ public class Main {
             System.out.println("Nie ma takiego algorytmu");
         }
     }
+
+
 }

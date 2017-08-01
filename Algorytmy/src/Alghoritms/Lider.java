@@ -25,7 +25,7 @@ public class Lider extends AbstractAlgorithm  {
         int [] counter=new int [tab[max]+1];
 
         max=tab[0];
-        
+
         for (int i = 0; i <tab.length ; i++) {
             counter[tab[i]]=counter[tab[i]]+1;
             if ( counter[tab[max]] > counter[tab[i]] ){
