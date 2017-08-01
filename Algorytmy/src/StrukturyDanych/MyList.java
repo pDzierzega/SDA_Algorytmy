@@ -9,22 +9,28 @@ public class MyList<T> {
     private Element<T> _tail;
     private int _counter;
 
-    public void goThroughListForward() {
+    public void printListForward() {
         Element<T> p = _head;
         while (p.getNextElement() != null) {
+            System.out.println(p.getData().toString());
             p = p.getNextElement();
         }
+        System.out.println(_tail.getData());
+
     }
 
-    public void goThroughListBack() {
+    public void printListBack() {
         Element<T> p = _tail;
-        while (p.getNextElement() != null) {
+        while (p.getPrevElement() != null) {
+            System.out.println(p.getData().toString());
             p = p.getPrevElement();
         }
+        System.out.println(_head.getData());
     }
 
+
+
     public <T> void add(T newData) {
-        String a = "AAA";
         if (_head == null) {
             _head = new Element(null, newData);
             _tail = _head;

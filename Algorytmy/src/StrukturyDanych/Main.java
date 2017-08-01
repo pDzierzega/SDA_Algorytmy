@@ -6,20 +6,30 @@ package StrukturyDanych;
 public class Main {
 
     public static void main(String[] args) {
-        MyList <Integer> list=new MyList<>();
+        MyList<Integer> list = new MyList<>();
 
-        int a=1;
-        int b=2;
+        int a = 3;
+        int b = 4;
 
+        list.add(0);
         list.add(1);
-        list.add(2);
 
-        System.out.println("Dziala?");
-
-        list.add(a,b);
+        list.add(2,a, b);
 
         System.out.println(list.length());
+
+        System.out.println();
+        list.printListBack();
+
+        System.out.println();
+        list.printListForward();
+
+//       JAK ZROBIC FOR_EACH
+//        for (Integer integer :list) {
+//            System.out.println(integer);
+//        }
 
 
     }
 }
+
