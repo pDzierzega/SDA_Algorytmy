@@ -49,6 +49,34 @@ public class Main {
 //        }
 
 
+        ArrayList<String> listOfColors = new ArrayList<>();
+        listOfColors.add("niebieski");
+        listOfColors.add("czarny");
+        listOfColors.add("zółty");
+        listOfColors.add("fioletowy");
+
+        listOfColors.add(0,"różowy");
+        listOfColors.add("zielony");
+//
+//        System.out.println(listOfColors);
+//
+//
+//        TAK MOZNA?????
+        ArrayList listOfAll = new ArrayList();
+
+        //listOfAll.add(listOfColors);
+        listOfAll.add("Dupa");
+
+        for (Object o :listOfAll) {
+            System.out.println(o);
+
+        }
+
+
+//
+
+
+
     }
 }
 
