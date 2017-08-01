@@ -1,5 +1,7 @@
 package StrukturyDanych;
 
+import java.util.ArrayList;
+
 /**
  * Created by RENT on 2017-08-01.
  */
@@ -8,6 +10,18 @@ public class Main {
     public static void main(String[] args) {
         MyList<Integer> list = new MyList<>();
 
+
+        list.add(0);
+
+        System.out.println("Długość listy "+list.length());
+        list.printListForward();
+
+        Element p=list.get(0);
+        list.remove(p);
+
+        System.out.println("Po usunieciu długość listy "+list.length());
+        list.printListForward();
+
         int a = 3;
         int b = 4;
 
@@ -15,14 +29,19 @@ public class Main {
         list.add(1);
 
         list.add(2,a, b);
+        list.addOnBeginning(100);
 
-        System.out.println(list.length());
+        p=list.get(3);
+        list.remove(p);
 
-        System.out.println();
-        list.printListBack();
-
-        System.out.println();
+        System.out.println("Po dodaniu długość listy "+list.length());
         list.printListForward();
+
+        // JAK ZROBIC ZEBY PODPOWIADAL MI ZE PODAJE ARGUMENT ZLEJ KLASY
+        // CZY POWINIENEM RZUTOWAC ELEMENT
+//        System.out.println(list.contains("ada"));
+//        System.out.println(list.get(-1));
+
 
 //       JAK ZROBIC FOR_EACH
 //        for (Integer integer :list) {

@@ -15,6 +15,13 @@ public class Element <T>{
         this.data = data;
     }
 
+    public Element(T data , Element nextElement) {
+        this.nextElement = nextElement;
+        this.prevElement = null;
+        this.data = data;
+    }
+
+
     public Element getNextElement() {
         return nextElement;
     }
@@ -29,6 +36,15 @@ public class Element <T>{
 
     public void setNextElement(Element nextElement) {
         this.nextElement = nextElement;
+    }
+
+    public void setPrevElement(Element prevElement) {
+        this.prevElement = prevElement;
+    }
+
+    @Override
+    public String toString() {
+        return data.toString() ;
     }
 }
 
