@@ -1,8 +1,9 @@
 package StrukturyDanych;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.lang.reflect.Method;
+import java.util.*;
+import java.util.function.Consumer;
+import java.util.stream.Stream;
 
 /**
  * Created by RENT on 2017-08-01.
@@ -13,16 +14,18 @@ public class MyList<T> {
     private Element<T> _tail;
     private int _counter;
 
-    public void printListForward() {
-        if (_head!=null){
-        Element<T> p = _head;
-        while (p.getNextElement() != null) {
-            System.out.println(p.getData().toString());
-            p = p.getNextElement();
-        }
-        System.out.println(_tail.getData());
 
-    }}
+    public void printListForward() {
+        if (_head != null) {
+            Element<T> p = _head;
+            while (p.getNextElement() != null) {
+                System.out.println(p.getData().toString());
+                p = p.getNextElement();
+            }
+            System.out.println(_tail.getData());
+
+        }
+    }
 
 
     public void printListBack() {
@@ -36,7 +39,7 @@ public class MyList<T> {
         }
     }
 
-    public <T> boolean contains (T Data){
+    public <T> boolean contains(T Data) {
         Element p = _tail;
         while (p.getPrevElement() != null) {
             if (p.getData().equals(Data)) return true;
@@ -45,15 +48,20 @@ public class MyList<T> {
         return false;
     }
 
-public Element get (int index){
-    int counter=0;
-    Element temp=_head;
-    while (counter!=index){
-        temp=temp.getNextElement();
-        counter++;
+    public Element get(int index) {
+        int counter = 0;
+        Element temp = _head;
+        while (counter != index) {
+            temp = temp.getNextElement();
+            counter++;
+        }
+        return temp;
     }
-    return temp;
-}
+
+    public ArrayList<T> toArray() {
+        ArrayList<T> toReturn = new ArrayList<T>();
+         return toReturn;
+    }
 
 
     public <T> void add(T newData) {
@@ -80,13 +88,13 @@ public Element get (int index){
         }
     }
 
-    public <T> void addOnBeginning (T data){
-        _head=new Element (data,_head);
+    public <T> void addOnBeginning(T data) {
+        _head = new Element(data, _head);
         _head.getNextElement().setPrevElement(_head);
         _counter++;
     }
 
-    public void remove (Element p){
+    public void remove(Element p) {
         try {
 
             if (_head == p) {
@@ -102,11 +110,33 @@ public Element get (int index){
             } else {
                 p.getNextElement().setPrevElement(p.getPrevElement());
             }
-        } catch (NullPointerException ex){}
-       _counter--;
+        } catch (NullPointerException ex) {
+        }
+        _counter--;
     }
 
-    public int length (){
+    public int length() {
         return _counter;
     }
-}
+
+//    private Element<T> myIterator(Element p) {
+//        return p.getNextElement()==_tail? _tail:myIterator(p.getNextElement());
+//    }
+
+    private Stream stream(){
+        Stream.Builder<Element> b=Stream.builder();
+        Element p=_head;
+        while (p==_tail){
+            b.accept(p);
+            p=p.getNextElement();
+        }
+        Stream<Element> s=b.build();
+        return s;
+
+    }
+
+ }
+
+
+
+
