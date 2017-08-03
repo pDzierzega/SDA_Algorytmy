@@ -34,6 +34,9 @@ public class AlgorithmFactory {
             case "base":
                 toReturn.add(new ParseToNSystem());
                 break;
+            case "onp":
+                toReturn.add(new ONP());
+                break;
             case "lider":
                 toReturn.add(new Lider());
                 break;
