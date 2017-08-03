@@ -58,11 +58,6 @@ public class MyList<T> {
         return temp;
     }
 
-    public ArrayList<T> toArray() {
-        ArrayList<T> toReturn = new ArrayList<T>();
-         return toReturn;
-    }
-
 
     public <T> void add(T newData) {
         if (_head == null) {
@@ -123,14 +118,15 @@ public class MyList<T> {
 //        return p.getNextElement()==_tail? _tail:myIterator(p.getNextElement());
 //    }
 
-    private Stream stream(){
-        Stream.Builder<Element> b=Stream.builder();
+    public Stream stream(){
+        Stream.Builder<T> b=Stream.builder();
         Element p=_head;
-        while (p==_tail){
-            b.accept(p);
+        while (p!=_tail){
+            b.add((T) p.getData());
             p=p.getNextElement();
         }
-        Stream<Element> s=b.build();
+        b.add(_tail.getData());
+        Stream<T> s=b.build();
         return s;
 
     }

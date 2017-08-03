@@ -31,6 +31,9 @@ public class AlgorithmFactory {
             case "minandmax":
                 toReturn.add(new MinAndMax());
                 break;
+            case "base":
+                toReturn.add(new ParseToNSystem());
+                break;
             case "lider":
                 toReturn.add(new Lider());
                 break;

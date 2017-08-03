@@ -9,34 +9,36 @@ public class  MyTree <T> {
     private T[] tab;
     private T _root;
     private int length;
-    private int level;
 
-    public MyTree(Class <T> c, int length) {
-        this.length = length;
-        final T[] tab = (T[]) Array.newInstance(c, length);
-        final int level=level();
+    public MyTree(Class <T> c) {
+        tab = (T[]) Array.newInstance(c, 1000);
+        int level=level();
+        length=0;
+        tab[0]=null;
         _root=tab[0];
+        System.out.println("tu");
 }
 
-    private int level() {
+    public int level() {
         int level = 0;
-        while ((int) Math.pow(2,level) >= length-1) {
+        while ((int) Math.pow(2,level) < length-1) {
             level++;
         }
         return  level;
     }
 
-    public void addAll (T... data){
-        int i=0;
-        for (T d :data) {
-        //    tab[i]=d;
-            i++;
+    public void add (T... data){
+        for (T t :data) {
+            tab[length]=t;
+            length++;
         }
     }
 
     public T get (int i){
         return tab[i];
     }
+
+
 
 
 
