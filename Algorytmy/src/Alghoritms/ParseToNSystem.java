@@ -1,5 +1,7 @@
 package Alghoritms;
 
+import java.util.Stack;
+
 /**
  * Created by RENT on 2017-08-03.
  */
@@ -7,6 +9,7 @@ public class ParseToNSystem extends AbstractAlgorithm {
     private int basis;
     private char[] tab;
     private int number_10;
+    private Stack<Character> stack=new Stack<>();
 
     @Override
     public String getName() {
@@ -19,19 +22,17 @@ public class ParseToNSystem extends AbstractAlgorithm {
         number_10=Integer.parseInt(input[2]);
 
         createTab();
-        System.out.println(tab);
-        StringBuilder builder=new StringBuilder();
 
         while (number_10!=0){
-            builder.append(tab[number_10%basis]);
+            stack.push(tab[number_10%basis]);
             number_10=number_10/basis;
         }
 
-        String number_basis=builder.reverse().toString();
-        System.out.println("Liczba " + input[2] + " w systemie " + basis + " to: "+number_basis);
-
-
-
+        System.out.println("Liczba " + input[2] + " w systemie " + basis + " to: ");
+        while (!stack.empty()){
+            System.out.print(stack.peek());
+            stack.pop();
+        }
 
     }
 
