@@ -46,6 +46,9 @@ public class AlgorithmFactory {
             case "duplikat":
                 toReturn.add(new Duplikat());
                 break;
+            case "lista":
+                toReturn.add(new Zad2_Lista());
+                break;
             case "sumall":
             toReturn.add( new SumAll());
                 break;
