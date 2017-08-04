@@ -68,7 +68,7 @@ public class ONP_reversed extends AbstractAlgorithm {
         POW('^',3),
         BRACKET_ON ('(',0),
         BRACKET_OFF(')',0),
-        EQUALS ('=',6),
+        EQUALS ('=',-1),
         NUMBER ();
 
         char symbol;

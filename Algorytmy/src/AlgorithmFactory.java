@@ -40,6 +40,9 @@ public class AlgorithmFactory {
             case "onp":
                 toReturn.add(new ONP());
                 break;
+            case "onpreversed":
+                toReturn.add((new ONP_reversed()));
+                break;
             case "lider":
                 toReturn.add(new Lider());
                 break;
