@@ -23,7 +23,10 @@ public class AlgorithmFactory {
             case "palindromwliczbach":
             toReturn.add( new PalindronWLiczbach_v1());
             toReturn.add( new PalindronWLiczbach_v2());
-            break;
+                // goThrouht
+            case "palindrom":
+                toReturn.add(new Palindrom());
+                break;
             case "sortowanieprzezzliczanie":
                 toReturn.add( new SortowaniePrzezZliczanie_v1());
                 toReturn.add( new SortowaniePrzezZliczanie_v2());
