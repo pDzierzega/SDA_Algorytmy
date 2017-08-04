@@ -30,6 +30,7 @@ public class Zad2_Lista extends AbstractAlgorithm {
             }
         }
 
+        System.out.println();
         System.out.println("Po usunieciu z listy dancyh elemntów:"+toDelete);
         System.out.println(lista.toString());
 
