@@ -41,50 +41,53 @@ public class AlgorithmFactory {
                 toReturn.add(new Lider());
                 break;
             case "mrand":
-            toReturn.add(new MRandom());
-            break;
+                toReturn.add(new MRandom());
+                break;
+            case "duplikat":
+                toReturn.add(new Duplikat());
+                break;
             case "sumall":
             toReturn.add( new SumAll());
-            break;
+                break;
             case "sumall2":
             toReturn.add( new SumAll_2());
-            break;
+                break;
             case "bankomat":
             toReturn.add( new Bankomat());
-            break;
+                break;
             case "leapyear":
             toReturn.add( new LeapYear());
-            break;
+                break;
             case "strong":
             toReturn.add( new Strong());
-            break;
+                break;
             case "triangleholiday":
             toReturn.add( new TriangleHolyday());
-            break;
+                break;
             case "sumlikestrong":
             toReturn.add( new SumLikeStrong());
-            break;
+                break;
             case "fibonaccisequence":
             toReturn.add( new FibonacciSequence());
-            break;
+                break;
             case "ciphercezar":
             toReturn.add( new CipherCezar());
-            break;
+                break;
             case "flamaster":
             toReturn.add( new Flamaster());
-            break;
+                break;
             case "guzzler":
             toReturn.add( new Guzzler());
-            break;
+                break;
             case "sortowaniebabelkowe":
             toReturn.add( new SortowanieBabelkowe());
-            break;
+                break;
             case "bajteusz":
             toReturn.add( new Bajteusz());
-            break;
+                break;
             case "zil":
             toReturn.add( new ZliczaczLiter());
-            break;
+                break;
             case "statki":
                 toReturn.add( new Statki());
                 break;
