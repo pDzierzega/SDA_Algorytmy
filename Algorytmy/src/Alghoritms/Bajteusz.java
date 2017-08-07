@@ -57,11 +57,6 @@ public class Bajteusz extends AbstractAlgorithm {
             max=n[i][j];
             numOfBoxes++;
 
-//            for (int l = j; l <=counter ; l++) {
-//                System.out.print(n[i][l] +" ,");
-//            }
-//            System.out.println( "liczba  pudełek " + numOfBoxes);
-
             if (min+max<=k[i]){
                 counter--;
             }

@@ -1,7 +1,6 @@
 package StrukturyDanych;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
  * Created by RENT on 2017-08-01.
@@ -9,7 +8,7 @@ import java.util.Collections;
 public class Main {
 
     public static void main(String[] args) {
-        MyList<Integer> list = new MyList<>();
+        My_List<Integer> list = new My_List<>();
         list.add(0);
 
         Element p=list.get(0);
@@ -47,8 +46,9 @@ public class Main {
        // list.stream().forEach(e-> myTree.add((Integer) e));
         test.stream().forEach(e-> myTree.add(e));
 
-
         System.out.println ("My Tree level is:"+ myTree.level());
+
+        System.out.println((1-2)/1);
     }
 }
 

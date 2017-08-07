@@ -7,6 +7,7 @@ import java.util.ArrayList;
  */
 public class AlgorithmFactory {
 
+
     public  ArrayList <AbstractAlgorithm> getAlgorithm(String name) throws AlgorithException {
         ArrayList<AbstractAlgorithm> toReturn = new ArrayList<>();
         switch (name.toLowerCase()){
@@ -114,6 +115,9 @@ public class AlgorithmFactory {
                 break;
             case "ktorydzien":
                 toReturn.add( new KtoryDzienRoku());
+                break;
+            case "ciazowyspecjalista":
+                toReturn.add(new CiazowySpecjalista());
                 break;
             default:
                 throw new AlgorithException ("Nie ma takiego algorytmu");

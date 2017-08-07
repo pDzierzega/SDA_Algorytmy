@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 /**
  * Created by RENT on 2017-08-01.
  */
-public class MyList<T> {
+public class My_List<T> {
 
     private Element<T> _head;
     private Element<T> _tail;
@@ -114,9 +114,6 @@ public class MyList<T> {
         return _counter;
     }
 
-//    private Element<T> myIterator(Element p) {
-//        return p.getNextElement()==_tail? _tail:myIterator(p.getNextElement());
-//    }
 
     public Stream stream(){
         Stream.Builder<T> b=Stream.builder();
