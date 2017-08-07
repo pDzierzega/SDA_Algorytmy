@@ -5,8 +5,8 @@ package StrukturyDanych;
  */
 public class MyHeap extends MyTree <Integer>  {
 
-    public MyHeap(Class<Integer> c) {
-        super(c);
+    public MyHeap() {
+        super(Integer.class);
     }
 
     @Override
@@ -30,5 +30,13 @@ public class MyHeap extends MyTree <Integer>  {
         }
     }
 
+    private int indexOfBiggerSon (int i, int t){
+        int first=2*i+1;
+        if (first==length-1) return first;
+        int second=first+1;
+        return tab[first]>tab[second]? first:second;
+        }
+    }
 
-}
+
+
