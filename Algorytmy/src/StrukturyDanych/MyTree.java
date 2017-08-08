@@ -34,6 +34,7 @@ public class  MyTree <T> {
             length++;
         }
         level=level();
+        _root=tab[0];
     }
 
     protected boolean isLeaf (int i){
