@@ -12,22 +12,27 @@ public class MyHeap extends MyTree <Integer>  {
     @Override
     public void add (Integer... data){
         for (Integer t :data) {
-            isFatherBigger(length,t);
+            fatherIsAlwaysBigger(length,t);
             length++;
         }
         level=level();
     }
 
-    private void isFatherBigger (int i,int t){
+    private void fatherIsAlwaysBigger(int i, int t){
         if (i>0) {
             int parent=(i-1)/2;
                 if (tab[parent]>t) {
                 tab[i]=t;
             } else {
                 tab[i]=tab[parent];
-                isFatherBigger(parent,t);
+                fatherIsAlwaysBigger(parent,t);
             }
         }
+    }
+
+    public int[] sorted (){
+        int[] sorted=new int[length-1];
+        return sorted;
     }
 
     private int indexOfBiggerSon (int i, int t){

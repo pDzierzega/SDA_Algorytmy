@@ -41,10 +41,11 @@ public class Main {
         test.add(4);
         test.add(5);
 
-        System.out.println(test.toString());
+       // System.out.println(test.toString());
 
        // list.stream().forEach(e-> myTree.add((Integer) e));
         test.stream().forEach(e-> myTree.add(e));
+
 
         System.out.println ("My Tree level is:"+ myTree.level());
 

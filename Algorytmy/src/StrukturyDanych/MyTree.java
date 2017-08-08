@@ -16,7 +16,6 @@ public class  MyTree <T> {
         this.tab = (T[]) Array.newInstance(c, MAX_LENGTH);
         this.level=0;
         this.length=0;
-        tab[0]=null;
         _root=tab[0];
 }
 
@@ -33,6 +32,7 @@ public class  MyTree <T> {
             tab[length]=t;
             length++;
         }
+        _root=tab[0];
         level=level();
     }
 
