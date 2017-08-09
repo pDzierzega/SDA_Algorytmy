@@ -32,14 +32,14 @@ public class  MyTree <T> {
             tab[length]=t;
             length++;
         }
-        _root=tab[0];
         level=level();
         _root=tab[0];
     }
 
-    protected boolean isLeaf (int i){
-        return 2*i+2>level;
+    public boolean isLeaf (int i){
+        return (2*i)>=length;
     }
+
 
     public T get (int i){
         return tab[i];
