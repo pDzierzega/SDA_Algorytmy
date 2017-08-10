@@ -119,6 +119,9 @@ public class AlgorithmFactory {
             case "ciazowyspecjalista":
                 toReturn.add(new CiazowySpecjalista());
                 break;
+            case "snieg":
+                toReturn.add(new Snieg());
+                break;
             default:
                 throw new AlgorithException ("Nie ma takiego algorytmu");
         }
