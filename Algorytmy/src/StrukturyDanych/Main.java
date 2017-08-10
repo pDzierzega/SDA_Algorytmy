@@ -27,6 +27,7 @@ public class Main {
 //      CZY POWINIENEM RZUTOWAC ELEMENT
 //        System.out.println(list.contains("ada"));
 //        System.out.println(list.get(-1));
+//        ZROBIMY TEST
 
 //      JAK ZROBIC FOR_EACH
 
