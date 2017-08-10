@@ -16,7 +16,6 @@ public class  MyTree <T> {
         this.tab = (T[]) Array.newInstance(c, MAX_LENGTH);
         this.level=0;
         this.length=0;
-        tab[0]=null;
         _root=tab[0];
 }
 
@@ -37,9 +36,10 @@ public class  MyTree <T> {
         _root=tab[0];
     }
 
-    protected boolean isLeaf (int i){
-        return 2*i+2>level;
+    public boolean isLeaf (int i){
+        return (2*i)>=length;
     }
+
 
     public T get (int i){
         return tab[i];
