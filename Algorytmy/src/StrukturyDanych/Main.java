@@ -20,7 +20,7 @@ public class Main {
         list.add(2560);
         list.add(345);
         list.add(789,a, b);
-        list.add(789,125,1123,134.431,256,789,123,328,3217,4389,123,548);
+        list.add(789,125,1123,134,431,256,789,123,328,3217,4389,123,548);
         list.addOnBeginning(100);
 
 //      JAK ZROBIC ZEBY PODPOWIADAL MI ZE PODAJE ARGUMENT ZLEJ KLASY
@@ -32,11 +32,15 @@ public class Main {
 //      JAK ZROBIC FOR_EACH
 
         MyHeap heap=new MyHeap();
+        ArrayList<Integer> test=new ArrayList<>();
+
 
         list.stream().forEach(e-> heap.add((Integer) e));
 
         heap.toString();
-        System.out.println(heap.sorted().toString());
+
+
+        //System.out.println(heap.sorted().toString());
 
     }
 }

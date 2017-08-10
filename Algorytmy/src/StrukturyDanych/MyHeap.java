@@ -78,37 +78,7 @@ public class MyHeap extends MyTree <Integer> {
         this.level=i;
     }
 
-    @Override
-    public String toString() {
-        StringBuilder builder=new StringBuilder();
-        String[] singleLine = new String[(int) Math.pow(2,level+1)];
 
-        int index;
-        int increment;
-        int i=0;
-
-        for (int j = 0; j <=level ; j++) {
-
-            singleLine[0]="LVL"+j;
-            for (int k = 1; k <singleLine.length ; k++) {
-                singleLine[k]=" ";
-            }
-
-            index=(int) Math.pow(2,level-j);
-            increment=(int) Math.pow(2,level-j-1);
-
-            for (int k = index; k <singleLine.length ; k=k+increment) {
-                singleLine[k]=tab[i].toString();
-                i++;
-            }
-
-            for (String s:singleLine){
-                builder.append(String.format("%5s",s));
-            }
-            builder.append("\n");
-        }
-        return builder.toString();
-    }
 }
 
 
