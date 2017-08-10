@@ -42,7 +42,7 @@ public class MyHeap extends MyTree <Integer> {
 //        repleceWithBiggerSon(0,length-1);
 //        _root=tab[0];
 //        length--;
-    }
+//    }
 
     private int indexOfBiggerSon(int i) {
         int first = 2 * i + 1;
